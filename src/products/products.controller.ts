@@ -50,9 +50,9 @@ import {
       return null;
     }
   
-    // @Delete(':id')
-    // async removeProduct(@Param('id') prodId: string) {
-    //     await this.productsService.deleteProduct(prodId);
-    //     return null;
-    // }
+    @Delete(':id')
+    async removeProduct(@Param('id') prodId: string) {
+        await this.productsService.deleteProduct(prodId);
+        return null;
+    }
   }
